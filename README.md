@@ -119,15 +119,6 @@ Use the spreadsheet files to compare trends over time for:
 
 Then map wheel angle terms into radius equations to evaluate turning performance and Ackermann behavior quality.
 
-## Notes from ADS DV
-
-From `ADS DV.docx`, this steering design is part of a broader automated-driving test platform effort. The document also includes:
-- CAN frame planning between API and VCU
-- Low-level controller implementation context (STM32/Nucleo)
-- Motivation for small-scale 4-wheel platform validation
-
-This repository README focuses on the steering mechanism and geometry analysis subset.
-
 ## Requirements
 
 - SolidWorks (to open `.SLDASM` / `.SLDPRT` files)
@@ -149,9 +140,4 @@ python test.py
 python optimization.py
 ```
 
-## Suggested Next Improvements
 
-- Add units explicitly to every printed variable in `test.py`
-- Export plots of steering angle vs computed turning radius
-- Add a script that reads the Excel logs and overlays simulation vs analytical model
-- Add tolerance/sensitivity analysis around optimized `(a, b, s)` values
